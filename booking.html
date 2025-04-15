@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Booking</title>
+
+    <meta name="author" content="Ahmed Rizk ELsisi" />
+
+    <style>
+
+.intro {
+        color: white;
+        background: rgb(135, 36, 36);
+        width: 100%;
+      }
+
+      .booking {
+        background-color: rgb(221, 235, 255);
+      }
+    </style>
+  </head>
+  <body>
+
+<h1 class ="intro" align="center"><br>  This is the ticket booking page <br><br> </h1>
+
+ 
+<p> <h1> Details of Seating Categories at the Party:</h1> 
+
+ <h3>1. VIP Seating:</h3> 
+   - Exclusive access to the best seats with a prime view of the stage.<br>
+   - Personalized service with a dedicated concierge.<br>
+   - VIP lounge access offering premium drinks and appetizers.<br>
+   - Complimentary premium services including early entry and a meet-and-greet option with special guests.<br><br>
+
+ <h3>2. Gold Seating:</h3>
+   - Great seats with a close-up view of the stage.<br>
+   - Comfortable and stylish seating with access to a premium food and drink area.<br>
+   - Priority entry to the event before general seating.<br>
+   - Ideal for those who want a balance of luxury and great experience.<br>
+
+ <h3>3. Silver Seating:</h3>
+   - Standard seats with a good view of the event.<br>
+   - Access to regular amenities such as food and drinks.<br>
+   - Affordable option for those who still want to enjoy the party without the premium price tag.<br>
+   - Great for socializing and enjoying the party atmosphere.<br><br>
+
+<b> Choose the seating category that fits your style and budget!</b><br> </p>
+
+<!--✨🎉✨🎉✨🎉✨🎉✨🎉✨🎉✨🎉✨🎉✨🎉✨🎉✨🎉✨🎉✨🎉✨🎉✨🎉✨🎉✨🎉✨🎉✨🎉-->
+
+    <table class="booking" border="10" width="400" height="250"  >
+      <!-- السعر و الفئه و وقت البيع-->
+
+      <caption>
+        <b>Ticket Prices</b>
+      </caption>
+
+      <thead align="center" width="50" height="50" >
+        <tr>
+          <td style="color: rgb(0, 0, 137)"><b> Category</b></td>
+          <td style="color: rgb(0, 0, 137)"><b>Price</b></td>
+          <td style="color: rgb(0, 0, 137)"><b> Time </b></td>
+        </tr>
+      </thead>
+<tbody align="center"> 
+      <tr>
+        <td  ><b>vip</b></td>
+        <td   style="color: red">1000$</td>
+        <td  >5:00</td>
+      </tr>
+      <tr>
+        <td  ><b>Gold</b></td>
+        <td  style="color: red">800$</td>
+        <td  >5:30</td>
+      </tr>
+    
+       
+        <tr>
+          <td><b>Silver</b></td>
+          <td style="color: red">500$</td>
+          <td>6:00</td>
+        </tr>
+    </tbody>
+    </table>
+    <p> <b>To book a reservation, fill out this information...</b></p>
+
+    <fieldset>
+<legend style="border: 100px;color: #f4eeee;background-color:rgb(135, 36, 36);"> Booking</legend>
+      <form action="sure.html"   >
+
+        <label for="txt">user name  : </label>
+        <input id="txt" type="text" required name=" the name" maxlength="14"> 
+        <br><br>
+        <label>gmail :</label>
+        <input type="email" placeholder="ad12@gmail.com" required name="email" >
+        <br><br>
+        <label for="pass">password  :</label>
+        <input id="pass" type="password" placeholder="Example:...23#MK" required name="pass" minlength="6">
+        <br><br>
+        <label for="num">your number : </label>
+        <input id="num" type="number" placeholder="+201...." value="+20" required name="number" min="0"  >
+        <br><br>
+     
+        <label>What do you want Category???</label>
+<select name="Category "  id="Category">
+
+ <optgroup label="Category">
+  <option value="Category">Vip</option>
+  <option value="Category">Gold</option>
+  <option value="Category">Silver</option>
+  </optgroup>
+ 
+</select>
+        <br><br>
+        <label for="radio">click here</label>
+        <input autofocus  id="radio" type="radio" required>
+        <br><br>
+<input type="reset" value="clear">
+  
+        <input type="submit" >
+        </form>
+    </fieldset>
+ 
+  </body>
+</html>
